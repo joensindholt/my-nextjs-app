@@ -9,6 +9,16 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: "/((?!.swa).*)<YOUR MATCHING RULE>",
+          destination: "<YOUR REWRITE RULE>",
+        },
+      ],
+    };
+  },
 };
 
 export default nextConfig;
