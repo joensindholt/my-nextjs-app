@@ -3,8 +3,8 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/((?!.swa).*)",
-        destination: "",
+        source: "/((?!.swa).*)<YOUR MATCHING RULE>",
+        destination: "<YOUR REDIRECT RULE>",
         permanent: false,
       },
     ];
