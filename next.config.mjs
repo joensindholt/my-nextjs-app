@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() => {
+  async redirects() {
     return [
       {
-        source: '/((?!.swa).*)',
-        destination: '', 
+        source: "/((?!.swa).*)",
+        destination: "",
         permanent: false,
-      }
-    ]
-  }
+      },
+    ];
+  },
 };
 
 export default nextConfig;
